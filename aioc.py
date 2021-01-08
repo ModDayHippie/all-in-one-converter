@@ -1,4 +1,5 @@
 import time
+print('this project is a WIP')
 
 print('this is a conversion program made by MDH')
 
@@ -33,7 +34,7 @@ if type == 'lbs':
     if ltype == 'oz':
         lbsoztype = int(ammount) * 16
         print('the weight in oz is')
-        print(lbsoz)
+        print(lbsoztype)
 if type == 'grams':
     gtype = input('what would you like to conver to lbs, kg, or oz')
     if gtype == 'lbs':
@@ -51,6 +52,7 @@ if type == 'grams':
 if type == 'oz':
     oztype = input('what would you like to convert to? grams, kg, lbs')
     if oztype == 'grams':
-        
+        print('oi')
 
+time.sleep(2)
 input('press Enter to exit')
