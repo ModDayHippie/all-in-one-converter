@@ -16,11 +16,12 @@ print('this project is a WIP')
 print('this is a conversion program made by MDH')
 
 ammount = input('what is the ammount to be converted:')
-type = input('what type of unit is it? kg, lbs,grams,oz,feet,meters,farenhite,celcius')
+type = input('what type of unit is it? kg, lbs,grams,oz,feet,meters,farenhite,celcius:')
+
 
 #these lines are to convert kg
 if type == 'kg':
-    kgtype = input('what would you like to convert to, lbs, grams or oz')
+    kgtype = input('what would you like to convert to, lbs, grams or oz:')
     if kgtype == 'lbs':
         kglbstype = int(ammount) * 2.204
         print('the weight in lbs is')
@@ -34,9 +35,10 @@ if type == 'kg':
         print('the wight in ounces is')
         print(kgoztype)
 
+
 #these lines are for converting lbs
 if type == 'lbs':
-    ltype = input('what would you like to convert to, kgs, grams or oz')
+    ltype = input('what would you like to convert to, kgs, grams or oz:')
     if ltype == 'kgs':
         lbskgtype = int(ammount) / 2.205
         print('the weight in kg is')
@@ -50,9 +52,10 @@ if type == 'lbs':
         print('the weight in oz is')
         print(lbsoztype)
 
+
 #these lines convert grams
 if type == 'grams':
-    gtype = input('what would you like to conver to lbs, kg, or oz')
+    gtype = input('what would you like to conver to lbs, kg, or oz:')
     if gtype == 'lbs':
         glbstype = int(ammount) / 454
         print('so the weight in lbs is')
@@ -66,9 +69,10 @@ if type == 'grams':
         print('so the weight in oz is')
         print(ozkgtype)
 
+
 #these lines convert oz
 if type == 'oz':
-    oztype = input('what would you like to convert to? grams, kg, lbs')
+    oztype = input('what would you like to convert to? grams, kg, lbs:')
     if oztype == 'grams':
         oztograms = int(ammount) * 28.3
         print('so the wight in grams is')
@@ -81,6 +85,40 @@ if type == 'oz':
         oztolbs = int(ammount) / 16
         print('so the weight in lbs is')
         print(oztolbs)
+
+
+#these lines convert feet
+if type == 'feet':
+    feettype = input('what would you like to convert to, km, miles, or meters, inches:')
+    if feettype == 'km':
+        feettokm = int(ammount) / 3281
+        print('so the length in km is')
+        print(feettokm)
+    if feettype == 'miles':
+        feettomiles = int(ammount) / 5280
+        print('so the length in miles is')
+        print(feettomiles)
+    if feettype == 'meters':
+        feettometers = int(ammount) / 3.281
+        print('so the length in meters is')
+        print(feettometers)
+    if feettype =='inches':
+        feettoinch = int(ammount) * 12
+        print('so the length in inches is')
+        print(feettoinch)
+
+
+#these lines convert meters
+if type == 'meters':
+    metertype = input('what would you like to convert to, feet, inches, km, miles:')
+    if metertype == 'feet':
+        metertofeet = int(ammount) * 3.281
+        print('so the lenght in feet is')
+        print(metertofeet)
+    if metertype == 'inches':
+        metertoinch = int(ammount) * 39.3701
+        print('so the length in inches is')
+        print(metertoinch)
 
 
 input('press ENTER to quit')
