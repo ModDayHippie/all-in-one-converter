@@ -1,4 +1,16 @@
 import time
+print('''░░░░░█▐▓▓░████▄▄▄█▀▄▓▓▓▌█
+░░░░░▄█▌▀▄▓▓▄▄▄▄▀▀▀▄▓▓▓▓▓▌█
+░░░▄█▀▀▄▓█▓▓▓▓▓▓▓▓▓▓▓▓▀░▓▌█
+░░█▀▄▓▓▓███▓▓▓███▓▓▓▄░░▄▓▐█▌
+░█▌▓▓▓▀▀▓▓▓▓███▓▓▓▓▓▓▓▄▀▓▓▐█
+▐█▐██▐░▄▓▓▓▓▓▀▄░▀▓▓▓▓▓▓▓▓▓▌█▌ Doge is watching
+█▌███▓▓▓▓▓▓▓▓▐░░▄▓▓███▓▓▓▄▀▐█
+█▐█▓▀░░▀▓▓▓▓▓▓▓▓▓██████▓▓▓▓▐█
+▌▓▄▌▀░▀░▐▀█▄▓▓██████████▓▓▓▌█▌
+▌▓▓▓▄▄▀▀▓▓▓▀▓▓▓▓▓▓▓▓█▓█▓█▓▓▌█▌
+█▐▓▓▓▓▓▓▄▄▄▓▓▓▓▓▓█▓█▓█▓█▓▓▓▐█''')
+
 print('this project is a WIP')
 
 print('this is a conversion program made by MDH')
@@ -6,6 +18,7 @@ print('this is a conversion program made by MDH')
 ammount = input('what is the ammount to be converted:')
 type = input('what type of unit is it? kg, lbs,grams,oz,feet,meters,farenhite,celcius')
 
+#these lines are to convert kg
 if type == 'kg':
     kgtype = input('what would you like to convert to, lbs, grams or oz')
     if kgtype == 'lbs':
@@ -21,6 +34,7 @@ if type == 'kg':
         print('the wight in ounces is')
         print(kgoztype)
 
+#these lines are for converting lbs
 if type == 'lbs':
     ltype = input('what would you like to convert to, kgs, grams or oz')
     if ltype == 'kgs':
@@ -35,6 +49,8 @@ if type == 'lbs':
         lbsoztype = int(ammount) * 16
         print('the weight in oz is')
         print(lbsoztype)
+
+#these lines convert grams
 if type == 'grams':
     gtype = input('what would you like to conver to lbs, kg, or oz')
     if gtype == 'lbs':
@@ -49,10 +65,22 @@ if type == 'grams':
         ozkgtype = int(ammount) / 28.35
         print('so the weight in oz is')
         print(ozkgtype)
+
+#these lines convert oz
 if type == 'oz':
     oztype = input('what would you like to convert to? grams, kg, lbs')
     if oztype == 'grams':
-        print('oi')
+        oztograms = int(ammount) * 28.3
+        print('so the wight in grams is')
+        print(oztograms)
+    if oztype == 'kg':
+        oztokg = int(ammount) / 35.274
+        print('so the weight in kg is')
+        print(oztokg)
+    if oztype == 'lbs':
+        oztolbs = int(ammount) / 16
+        print('so the weight in lbs is')
+        print(oztolbs)
 
-time.sleep(2)
-input('press Enter to exit')
+
+input('press ENTER to quit')
