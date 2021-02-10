@@ -119,6 +119,14 @@ if type == 'meters':
         metertoinch = int(ammount) * 39.3701
         print('so the length in inches is')
         print(metertoinch)
+    if metertype == 'km':
+        metertokm = int(ammount) / 1000
+        print('the length in km is')
+        print(metertokm)
+    if metertype == 'miles':
+        metertomile = int(ammount) / 1609
+        print('so the length in miles is')
+        print(metertomile)
 
 
 input('press ENTER to quit')
