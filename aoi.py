@@ -15,6 +15,7 @@ print('''░░░░░█▐▓▓░████▄▄▄█▀▄▓▓▓�
 print('this project is a WIP')
 
 print('this is a conversion program made by MDH')
+print('------------------------------------------------------------------------------------------')
 
 ammount = input('what is the ammount to be converted:')
 type = input('what type of unit is it? kg, lbs,grams,oz,feet,meters,farenhite,celcius,tip:')
@@ -134,15 +135,15 @@ if type == 'tip':
       tipammount = input('What % would you like to tip?5,10,15 or 20:')
       if tipammount == '5': 
           fivetip = int(ammount)  * 1.05 - int(ammount)
-          print('so the ammount would be')
+          print('so the ammount to tip would be')
           print(fivetip)
       if tipammount == '10':
           tentip = int(ammount)  * 1.10 - int(ammount)
-          print('so the ammount would be')
+          print('so the ammount to tip would be')
           print(tentip)
       if tipammount == '15':
           fivtip = int(ammount)  * 1.15 - int(ammount)
-          print('so the ammount would be')
+          print('so the ammount to tip would be')
           print(fivtip)
 
 input('press ENTER to quit')
