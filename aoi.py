@@ -18,7 +18,7 @@ print('this is a conversion program made by MDH')
 print('------------------------------------------------------------------------------------------')
 
 ammount = input('what is the ammount to be converted:')
-type = input('what type of unit is it? kg, lbs,grams,oz,feet,meters,farenhite,celcius,tip:')
+type = input('what type of unit is it? kg, lbs,grams,oz,feet,meters,farenhite,celcius,tip,centimeteres:')
 
 
 #these lines are to convert kg
@@ -145,5 +145,16 @@ if type == 'tip':
           fivtip = int(ammount)  * 1.15 - int(ammount)
           print('so the ammount to tip would be')
           print(fivtip)
+#these lines convert centimeters
+if type == 'centimeters':
+     centitype = input('what would you like to convert to:')
+     if centitype == 'inches':
+         centitoinches = int(ammount)  / 2.54
+         print('so the length in inches is:')
+         print(centitoinches)
+     if centitype == 'feet':
+         centitofeet = int(ammount) / 30.48
+         print('so the lenght in  feet is')
+         print(centitofeet)
 
 input('press ENTER to quit')
