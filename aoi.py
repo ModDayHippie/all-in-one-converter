@@ -156,5 +156,10 @@ if type == 'centimeters':
          centitofeet = int(ammount) / 30.48
          print('so the lenght in  feet is')
          print(centitofeet)
+     if centitype == 'meters':
+        centitometers = int(ammount) / 100
+        print('so the length in meteres is:')
+        print(centitometers)
+    # if centitype == '
 
 input('press ENTER to quit')
