@@ -1,9 +1,11 @@
 # all-in-one-converter
 
-project is currently a wip
+A basic Python script that uses math to convert mesuments and mass
 
-weight,temp,length converter and tip
+weight,temp,length converter and tips
+
+Has no dependencies 
 
 *WIP* currently, the tip calc only works with full numbers, ie will work with 10,11,12,ect but not 10.02 ect
 
-*may not be 100% accurate*
+
