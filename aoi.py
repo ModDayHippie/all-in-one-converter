@@ -15,6 +15,7 @@ print('''░░░░░█▐▓▓░████▄▄▄█▀▄▓▓▓�
 print('this project is a WIP that showcases math,loops,input and other basic functions of python')
 
 print('this is a conversion program made by MDH')
+print('v1.1')
 print('------------------------------------------------------------------------------------------')
 
 ammount = input('what is the ammount to be converted:')
